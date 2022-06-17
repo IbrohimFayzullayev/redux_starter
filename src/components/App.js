@@ -1,13 +1,15 @@
 import React from "react";
-import ButtonCounter from "./ButtonCounter";
-import DisplayCounter from "./DisplayCounter";
-function App() {
+// import UserList from "./UserList";
+import PostList from "./PostList";
+import UserListContainer from "../redux/containers/UserListContainer";
+
+const App = () => {
   return (
-    <div>
-      <DisplayCounter />
-      <ButtonCounter />
+    <div className="app">
+      <UserListContainer />
+      <PostList />
     </div>
   );
-}
+};
 
 export default App;
